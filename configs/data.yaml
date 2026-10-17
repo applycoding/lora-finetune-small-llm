@@ -1,0 +1,5 @@
+# Synthetic maintenance logs. Every row is labeled synthetic.
+output_path: data/synthetic/maintenance_logs.jsonl
+n_train: 48
+n_eval: 16
+seed: 42

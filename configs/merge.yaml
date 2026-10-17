@@ -1,0 +1,7 @@
+# Needs HF_TOKEN unless you pass --merge-only. Not run in CI.
+# Replace repo_id before pushing.
+base_model: Qwen/Qwen2.5-0.5B-Instruct
+adapter_path: outputs/lora-qwen2.5-0.5b
+output_dir: outputs/merged-maintlog
+repo_id: your-hf-username/maintlog-json-lora
+private: true

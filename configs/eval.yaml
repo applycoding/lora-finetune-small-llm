@@ -1,0 +1,9 @@
+# Writes a fresh score file. It does not fill the placeholder results table.
+model_name_or_path: Qwen/Qwen2.5-0.5B-Instruct
+adapter_path: outputs/lora-qwen2.5-0.5b
+dataset_path: data/synthetic/maintenance_logs.jsonl
+split: eval
+output_path: results/latest_eval.json
+max_new_tokens: 256
+max_samples: null
+use_cpu: true

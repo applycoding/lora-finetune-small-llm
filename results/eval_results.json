@@ -1,0 +1,20 @@
+{
+  "status": "placeholder",
+  "disclaimer": "No evaluation was run. These cells are empty on purpose. This file is not a benchmark.",
+  "split": null,
+  "n": null,
+  "json_validity": null,
+  "field_accuracy": null,
+  "per_field_accuracy": {
+    "action_taken": null,
+    "asset_id": null,
+    "component": null,
+    "downtime_minutes": null,
+    "reported_at": null,
+    "severity": null,
+    "site": null,
+    "status": null,
+    "symptom": null,
+    "technician": null
+  }
+}

@@ -1,0 +1,27 @@
+# Intended fine-tune. Not run in CI. Swap model_name_or_path for another small
+# instruct model such as HuggingFaceTB/SmolLM2-360M-Instruct if you want.
+model_name_or_path: Qwen/Qwen2.5-0.5B-Instruct
+dataset_path: data/synthetic/maintenance_logs.jsonl
+output_dir: outputs/lora-qwen2.5-0.5b
+max_steps: 100
+num_train_epochs: 1
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 4
+learning_rate: 0.0002
+max_length: 512
+lora_r: 16
+lora_alpha: 32
+lora_dropout: 0.05
+target_modules:
+  - q_proj
+  - k_proj
+  - v_proj
+  - o_proj
+seed: 42
+logging_steps: 5
+save_strategy: steps
+save_steps: 50
+eval_strategy: "no"
+use_cpu: false
+eos_token: "<|im_end|>"
+train_split: train
