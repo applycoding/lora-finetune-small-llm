@@ -1,4 +1,4 @@
-# Unit tests only. scripts/merge_push.py is omitted: it needs HF_TOKEN.
+# Unit tests only. The Hub merge script is intentionally absent.
 name: ci
 
 on:
